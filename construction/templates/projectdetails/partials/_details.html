@@ -1,0 +1,19 @@
+{% load static %}
+<div class="blog_container">
+
+    <div class= "blog_section_container">
+        {{ project.detail_description|safe }}
+    </div>
+
+    <div class="contain">
+    <iframe style="width: 50%;
+    height: 50%;
+    border: 4px solid;
+    border-color: #f5bf23;
+    border-radius: 2rem;
+    padding: .3rem;
+    margin-left: 2rem;"
+
+     src="{{ project.address }}" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>

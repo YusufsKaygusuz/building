@@ -1,0 +1,23 @@
+{% load static %}
+<section class="projects" id="projects">
+    <h1 class="heading">Projelerimiz</h1>
+    <div class="box-container">
+        {% for value in project%}
+            {% if value.isMain %}
+                <a href="{% static "construction/img/"|add:value.image_back %}" class="box">
+                    <div class="image">
+                        <img src="{% static "construction/img/"|add:value.image_front %}" alt="front-image">
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3> {{ value.heading }} </h3>
+                            <p> {{ value.mini_description }} </p>
+                        </div>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div> 
+
+</section>

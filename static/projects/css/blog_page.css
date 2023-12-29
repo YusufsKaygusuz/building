@@ -1,0 +1,106 @@
+/* Temel stillendirme */
+.blog_container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p{
+    color: #333;
+}
+
+.blog_section_container {
+    padding: 20px;
+}
+
+/* Başlık stilleri */
+.blog_section_container h1 {
+    font-size: 34px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.blog_section_container h2 {
+    font-size: 28px;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    margin: 1em 0;
+}
+
+/* Paragraf stilleri */
+.blog_section_container p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* Resim stilleri */
+.blog_section_container img {
+    max-width: 100%;
+    width: 60%;
+    border: 1px solid #ddd;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.blog_section_container h5{
+    /* Resim açıklaması için stil tanımları yapabilirsiniz */
+    font-size: 14px !important; /* Örnek: Metin boyutunu ayarlayın */
+    font-style: italic; /* Örnek: İtalik stilini ekleyin */
+    color: #e4e4e4 !important; /* Örnek: Metin rengini belirleyin */
+    text-align: center;
+    margin-top: -1rem;
+}
+
+/* Liste stilleri */
+.blog_section_container ul {
+    list-style-type: circle;
+    color: white;
+    margin-left: 20px; /* Liste sol kenar boşluğunu ayarla */
+}
+
+.blog_section_container li {
+    font-size: 16px; /* Liste öğe metin boyutunu ayarla */
+    line-height: 1.5; /* Satır yüksekliğini ayarla */
+    color: #333; /* Liste öğe metin rengini ayarla */
+    text-align: justify; /* Metin hizalamasını ayarla */
+    margin-bottom: 1rem; /* Öğeler arasındaki boşluğu ayarla */
+    border-left: 5px solid #7e7e7e;
+    padding-left: 1rem;
+}
+
+/* Kalın metin stilleri */
+strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* İçerik arka plan rengi */
+.blog_description {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Alıntı cümlesi stilleri */
+blockquote {
+    background: #fbf9f9 !important;
+    border-left: 4px solid #333; /* Sol kenar çizgisi rengi ve kalınlığı */
+    padding: 10px; /* İç içe boşluklar */
+    margin: 10px 0; /* Dış boşluklar */
+    font-style: italic; /* İtalik metin stilini uygula */
+    color: black; /* Metin rengi */
+}
+
+.blog_section_container div {
+    background-color: rgba(167, 167, 167, 0.3) !important;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* x-offset y-offset bulanıklık rengi */
+    border-radius: 10px;
+    border: none !important;
+    border-left: 8px solid #f5bf23 !important;
+    width: 50%;
+    font-size: 15px;
+    padding: 1.4rem !important;
+}
+

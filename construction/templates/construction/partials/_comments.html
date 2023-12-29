@@ -1,0 +1,30 @@
+{% load static %}
+<section class="reviews" id="comments">
+    <h1 class="heading">Müşteri Yorumlarımız</h1>
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+
+            {% for value in comment %}
+                {% if value.isActive %}
+                    <div class="swiper-slide slide"> 
+                        <p> {{ value.comment }} </p>
+                        <div class="user">
+                            <img src="{% static "construction/img/"|add:value.image %}" alt="">
+                            <div class="info">
+                                <h3> {{value.name_surname}} </h3>
+                                <div class="stars">
+                                    
+                                {% for _ in "12345" %}  {% if forloop.counter <= value.score %}
+                                        <i class="fas fa-star"></i>
+                                    {% endif %}
+                                {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %} 
+
+        </div>
+    </div>
+</section>

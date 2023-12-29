@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    {% include "construction/partials/_head.html" %}  
+</head>
+
+<body>
+    <!-- header section starts -->
+    {% include "construction/partials/_header.html" %}
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    {% include "construction/partials/_home.html" %}
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+    {% include "construction/partials/_about.html" %}
+    <!-- about section starts -->
+
+    <!-- services section starts -->
+    {% include "construction/partials/_services.html" %}
+    <!-- services section ends -->
+
+    <!-- Projects section starts -->
+    {% include "construction/partials/_projects.html" %}
+    <!-- Projects section ends -->
+
+    <!-- mini-projects section starts -->
+    {% include "construction/partials/_mini_projects.html" %}
+    <!-- mini-projects section ends -->
+
+    <!-- Comments section starts -->
+    {% include "construction/partials/_comments.html" %}
+    <!-- comments section ends -->
+
+    <!-- Contact section starts -->
+    {% include "construction/partials/_contact.html" %}
+    <!-- Contact section ends -->
+
+    <!-- Footer section starts -->
+    {% include "construction/partials/_footer.html" %}
+    <!-- Footer section ends -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src={% static "construction/js/script.js" %} ></script>
+
+    <script>
+
+        lightGallery(document.querySelector('.projects .box-container'));
+
+    </script>
+</body>
+
+</html>

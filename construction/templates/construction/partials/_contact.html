@@ -1,0 +1,23 @@
+<section class="contact" id="contact">
+        
+    <h1 class="heading">Bizimle iletişime geç</h1>
+
+    <div class="row">
+
+        <iframe class="map" src="{{ social_account.googlemaps }}" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <h3>Bizimle temas kur</h3>
+            <input type="text" class="box" name="{{form.first_name.name}}" placeholder="Adınız" required>
+            <input type="text" class="box" name="{{form.last_name.name}}" placeholder="Soyadınız" required>
+
+            <input type="email" class="box" name="{{form.e_mail_address.name}}" placeholder="Email Adresiniz" required>
+
+            <textarea name="{{form.message.name}}" class="box" cols="30" rows="10" placeholder="Mesajınız" required></textarea>
+
+            <input type="submit" value="mesajı gönder" class="btn">
+        </form>
+    </div>
+
+</section>

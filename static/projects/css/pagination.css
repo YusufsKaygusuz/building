@@ -1,0 +1,25 @@
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: -2em;
+    background-color: #111;
+    
+  }
+  .pagination{
+    display: inline-block; 
+  }
+  
+  .pagination a{
+    font-size: 20px;
+    float: left;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #fff;
+    transition: .2s;
+  }
+  .pagination a:hover{
+    background: lightblue;
+    color: #000;
+  }

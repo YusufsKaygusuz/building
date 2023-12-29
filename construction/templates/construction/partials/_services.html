@@ -1,0 +1,15 @@
+{% load static %}
+<section class="services" id="services">
+    <h1 class="heading">Hizmetlerimiz</h1>
+    <div class="box-container">
+        {% for value in service %}
+        {% if value.isActive %}
+            <div class="box">
+                <img src="{% static "construction/img/"|add:value.image %} " alt="">
+                <h3> {{ value.heading }} </h3>
+                <p> {{ value.description }} </p>
+            </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>

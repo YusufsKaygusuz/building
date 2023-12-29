@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    {% include "projects/partials/_head.html" %}
+</head>
+<body>
+
+<!-- header section starts -->
+    {% include "projects/partials/_header.html" %}
+<!-- header section starts -->
+
+<!-- Projects section starts -->
+    {% include "projects/partials/_prosection.html" %}
+<!-- Projects section ends -->
+
+<!-- Pagination section starts -->
+    {% include "projects/partials/_pagination.html" %}
+<!-- Pagination section starts -->
+
+<!-- Footer section starts -->
+    {% include "projects/partials/_footer.html" %}
+<!-- Footer section starts -->
+
+<script src="{% static "projects/js/script.js" %}"></script>
+
+</body>
+
+</html>

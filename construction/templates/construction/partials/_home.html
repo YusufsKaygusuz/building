@@ -1,0 +1,22 @@
+{% load static %}
+<section class="home" id="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+
+            {% for heading in header %}
+                {% if heading.isActive %}
+                    <section class="swiper-slide slide" style="background: url({% static 'construction/img/'|add:heading.background_image %}) no-repeat;">
+                        <div class="content">
+                            <h3> {{ heading.heading }} </h3>
+                            <p> {{ heading.description }} </p>
+                            <a href=" {% url "projects_page" %} " class="btn">Keşfet</a>
+                        </div>
+                    </section>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+</section>

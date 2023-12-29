@@ -1,0 +1,39 @@
+{% load static %}
+<section class="about" id="about">
+    <h1 class="heading">hakkımızda</h1>
+
+    <div class="row">
+        <div class="video">
+            <video src= "{% static 'construction/img/'|add:aboutus.video %}" loop muted autoplay></video>
+        </div>
+
+        <div class="content">
+            <h3> {{ aboutus.heading }} </h3>
+            <p> {{ aboutus.description }} </p>
+            {% comment %} <a href="#services" class="btn">Daha fazlası</a> {% endcomment %}
+        </div>
+    </div>
+
+    <div class="box-container">  
+        <div class="box">
+            <h3> {{ chart.firstChartNumber }}+</h3>
+            <p> {{ chart.firstChartDescription }}</p>
+        </div>
+
+        <div class="box">
+            <h3>{{ chart.secondChartNumber }}+</h3>
+            <p> {{ chart.secondChartdescription }}</p>
+        </div>
+
+        <div class="box">
+            <h3> {{ chart.thirdChartNumber }}+</h3>
+            <p> {{chart.thirdChartDescription}} </p>
+        </div>
+
+        <div class="box">
+            <h3> {{ chart.fourthChartNumber }}+</h3>
+            <p> {{chart.fourthChartDescription}} </p>
+        </div>
+    </div>
+
+</section>
