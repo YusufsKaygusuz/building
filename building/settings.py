@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['severbuilding-a85fb2b21768.herokuapp.com']
+ALLOWED_HOSTS = ['severbuilding-a85fb2b21768.herokuapp.com',]
 
 
 # Application definition
