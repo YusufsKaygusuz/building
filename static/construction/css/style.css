@@ -337,7 +337,7 @@ section{
 	width: 7rem;
 	line-height: 7rem;
 	font-size: 3rem;
-	background: var(--white);
+	background: rgba(255, 255, 255, 0.42);
 }
 .home .swiper-button-next:hover, .home .swiper-button-prev:hover {
 	background: var(--yellow);
@@ -702,8 +702,6 @@ section{
 .footer .credit span {
 	color: var(--yellow);
 }
-
-
 
 
 @media (max-width: 1200px) {
