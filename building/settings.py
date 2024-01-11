@@ -27,7 +27,7 @@ SECRET_KEY = getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['severbuilding-a85fb2b21768.herokuapp.com']
+ALLOWED_HOSTS = ['severbuilding-a85fb2b21768.herokuapp.com', 'www.yilmazseverinsaat.com', 'yilmazseverinsaat.com']
 
 
 # Application definition
@@ -67,10 +67,6 @@ sentry_sdk.init(
     # We recommend adjusting this value in production.
     profiles_sample_rate=1.0,
 )
-
-
-
-
 
 ROOT_URLCONF = 'building.urls'
 
