@@ -1,23 +1,23 @@
 let navbar = document.querySelector('.header .navbar');
-let loginForm = document.querySelector('.header .login-form');
+// let loginForm = document.querySelector('.header .login-form');
 let contactInfo = document.querySelector('.contact-info');
 
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
     contactInfo.classList.remove('active'); 
-    loginForm.classList.remove('active');
+    // loginForm.classList.remove('active');
 };
 
 document.querySelector('#info-btn').onclick = () =>{
     contactInfo.classList.add('active');
-    loginForm.classList.remove('active');
+    // loginForm.classList.remove('active');
 }
 
-document.querySelector('#login-btn').onclick = () =>{
-    loginForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    contactInfo.classList.remove('active');
-}
+// document.querySelector('#login-btn').onclick = () =>{
+//     loginForm.classList.toggle('active');
+//     navbar.classList.remove('active');
+//     contactInfo.classList.remove('active');
+// }
 
 document.querySelector('#close-contact-info').onclick = () =>{
     contactInfo.classList.remove('active');
