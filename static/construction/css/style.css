@@ -543,6 +543,7 @@ section{
 .reviews .slide .user img {
 	height: 7rem;
 	width: 7rem;
+	border-radius: 50%;
 }
 .reviews .slide .user h3 {
 	font-size: 2rem;
