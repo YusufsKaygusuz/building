@@ -37,7 +37,7 @@ def index(request):
 def projects(request):
     projects = Projects.objects.all()
 
-    paginator = Paginator(projects, 3)
+    paginator = Paginator(projects, 6)
     page = request.GET.get('page', 1)
     pagi_projects = paginator.page(page)
 
