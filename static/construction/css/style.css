@@ -412,7 +412,7 @@ section{
 
 /* services section css codes starts */
 .services {
-	background: var(--light-bg);
+	background: var(--black);
 }
 .services .box-container {
 	display: grid;
@@ -452,7 +452,7 @@ section{
 
 /* projects section css codes starts */
 .projects{
-	background: var(--black);
+	background: var(--light-bg);
 }
 .projects .heading{
 	color: var(--white);
