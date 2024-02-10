@@ -3,7 +3,9 @@ from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
 from construction.models import ContactInfo, HeaderIntroduction, AboutUs, Chart, Services, Projects, Comments, SocialAccount
 from construction.forms import contactInfoForms
+from django_ratelimit.decorators import ratelimit
 
+@ratelimit(key='user_or_ip', rate='4/m')
 def index(request):
     if request.method == "POST":
         form = contactInfoForms(request.POST)
@@ -69,4 +71,3 @@ def projectdetails(request, project_slug):
          "project" : project_now,
          "continfo" : contactinfo
     })
-
