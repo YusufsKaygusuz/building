@@ -27,7 +27,7 @@ SECRET_KEY = getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['severbuilding-a85fb2b21768.herokuapp.com', 'www.yilmazseverinsaat.com', 'yilmazseverinsaat.com']
+ALLOWED_HOSTS = ['www.yilmazseverinsaat.com', 'yilmazseverinsaat.com']
 
 
 # Application definition
@@ -53,20 +53,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-
-import sentry_sdk
-
-sentry_sdk.init(
-    dsn="https://4e17e9480aa74b131286412cc6822941@o4506524984410112.ingest.sentry.io/4506524985982976",
-    # Set traces_sample_rate to 1.0 to capture 100%
-    # of transactions for performance monitoring.
-    traces_sample_rate=1.0,
-    # Set profiles_sample_rate to 1.0 to profile 100%
-    # of sampled transactions.
-    # We recommend adjusting this value in production.
-    profiles_sample_rate=1.0,
-)
 
 ROOT_URLCONF = 'building.urls'
 
@@ -112,6 +98,7 @@ else:
         }
     }
 
+SECURE_SSL_REDIRECT = True
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
